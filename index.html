@@ -1,8 +1,23 @@
-<h1>
-	hello world
-</h1>
-<br />
-<h1>
-孔令辉是白东明的好爸爸
-	</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>时间</title>
+</head>
+<body>
+<h1 id="timer"></h1>
+</body>
+</html>
+<script>
 
+//日期类型:date
+var date = new Date();
+console.log("日期类型======"+typeof date);
+
+var timerDom = document.getElementById("timer");
+setInterval(function(){
+var d = new Date();
+timerDom.innerHTML = d.toLocaleString();
+},10);
+
+  </script>
